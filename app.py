@@ -13,7 +13,7 @@ This dashboard displays different visualizations and insights about parking mete
 
 st.subheader("Parking Types vs Meter Types")
 img_path = '/content/parking_types_vs_meter_types.svg'
-st.image(img_path, caption="Parking Types vs Meter Types", use_column_width=True)
+st.image(img_path, caption="Parking Types vs Meter Types", use_container_width=True)
 
 st.subheader("Number of Parking Meters by District")
 img_path = '/content/parking_meters_by_district_shortened.svg'
