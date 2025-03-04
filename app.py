@@ -17,7 +17,7 @@ st.image(img_path, caption="Parking Types vs Meter Types", use_container_width=T
 
 st.subheader("Number of Parking Meters by District")
 img_path = '/content/parking_meters_by_district_shortened.svg'
-st.image(img_path, caption="Number of Parking Meters by District", use_column_width=True)
+st.image(img_path, caption="Number of Parking Meters by District", use_container_width=True)
 
 st.subheader("Map of Parking Meters")
 st.markdown("""
