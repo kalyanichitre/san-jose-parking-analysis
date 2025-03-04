@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import streamlit as st
 import streamlit.components.v1 as components
 
 url = 'https://raw.githubusercontent.com/kalyanichitre/san-jose-parking-analysis/main/Parking_Meters.csv'
@@ -15,10 +16,10 @@ st.image(img_url, caption="Parking Types vs Meter Types", use_container_width=Tr
 img_url = 'https://raw.githubusercontent.com/kalyanichitre/san-jose-parking-analysis/main/parking_meters_by_district.svg'
 st.image(img_url, caption="Number of Parking Meters by District", use_container_width=True)
 
-st.subheader("Map of Parking Meters")
-components.html("""
-<iframe src="https://drive.google.com/uc?export=view&id=1fyNZnr00lIz0aYWhMoq5LtIbpR1-HDp_" width="100%" height="600px"></iframe>
-""", height=600)
+with open("parking_meters_map.html", "r") as file:
+    map_html = file.read()
+
+components.html(map_html, height=600)
 
 parking_type = st.selectbox('Select Parking Type', df['PARKINGTYPE'].unique())
 filtered_data = df[df['PARKINGTYPE'] == parking_type]
