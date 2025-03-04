@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from PIL import Image
 
-url = 'https://raw.githubusercontent.com/your-username/your-repository/main/Parking_Meters.csv'
+url = 'https://raw.githubusercontent.com/kalyanichitre/san-jose-parking-analysis/main/Parking_Meters.csv'
 df = pd.read_csv(url)
 
 st.title("San Jose Parking Meter Data Analysis")
