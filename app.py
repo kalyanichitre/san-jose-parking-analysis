@@ -13,7 +13,7 @@ st.subheader("Parking Types vs Meter Types")
 img_url = 'https://raw.githubusercontent.com/kalyanichitre/san-jose-parking-analysis/main/parking_types_vs_meter_types.svg'
 st.image(img_url, caption="Parking Types vs Meter Types", use_container_width=True)
 
-img_url = 'https://raw.githubusercontent.com/kalyanichitre/san-jose-parking-analysis/main/parking_meters_by_district_shortened.svg'
+img_url = 'https://raw.githubusercontent.com/kalyanichitre/san-jose-parking-analysis/main/parking_meters_by_district.svg'
 st.image(img_url, caption="Number of Parking Meters by District", use_container_width=True)
 
 st.subheader("Map of Parking Meters")
